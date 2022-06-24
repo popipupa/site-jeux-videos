@@ -1,6 +1,13 @@
 body {
     font-family: 'Catamaran', sans-serif;
 }
-#image1 {
+.imageHistoire {
     width: 400px;
+}
+.imagePc {
+    width: 500px;
+    /* center l'image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
