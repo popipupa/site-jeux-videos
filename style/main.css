@@ -11,3 +11,10 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.imagePs4 {
+    width: 500px;
+    /* center l'image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
