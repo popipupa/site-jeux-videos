@@ -18,3 +18,13 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.avis{
+    background-color: lightgray;
+}
+.avisSubheader{
+    font-weight: bold;
+}
+.avisSubheader p{
+    margin: 0pt;
+}
