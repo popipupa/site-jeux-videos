@@ -28,3 +28,10 @@ body {
 .avisSubheader p{
     margin: 0pt;
 }
+
+.event{
+    background-color: lightgrey;
+}
+.eventInfo{
+    font-weight: bold;
+}
