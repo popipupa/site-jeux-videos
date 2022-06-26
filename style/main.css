@@ -38,7 +38,7 @@ body {
 .newsBlock {
     border-radius: 10px solid;
     border-color: black;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 .newsHeader {
     background-color: deepskyblue;
@@ -50,17 +50,23 @@ body {
     */
     display: inline-block;
     min-width: 400px;
+    padding-right: 200px;
 }
 .newsDate {
     text-align: right;
-    padding-left: 200px;
 }
 .newsContent {
     font-style: italic;
+    /* increase div height to fit content (image on the left is bigger than text quantity, or vice versa) => harmonize div size to be max of the 2 
+    https://stackoverflow.com/a/17807687
+    */
+    display: block;
+    overflow: auto;
 }
 .newsContent img {
     float: left;
     max-width: 200px;
+    padding-top: 10px;
     padding-right: 10px;
 }
 
