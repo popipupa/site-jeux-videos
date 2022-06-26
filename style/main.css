@@ -57,10 +57,11 @@ body {
 }
 .newsContent {
     font-style: italic;
-    /* increase div height to fit content (image on the left is bigger than text quantity, or vice versa) => harmonize div size to be max of the 2 */
+    /* increase div height to fit content (image on the left is bigger than text quantity, or vice versa) => harmonize div size to be max of the 2 
+    https://stackoverflow.com/a/17807687
+    */
     display: block;
     overflow: auto;
-    /* */
 }
 .newsContent img {
     float: left;
