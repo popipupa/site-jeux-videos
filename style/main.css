@@ -70,6 +70,61 @@ body {
     padding-right: 10px;
 }
 
+.testsBlock {
+    border-radius: 10px solid;
+    border-color: black;
+    padding-bottom: 10px;
+}
+.testsHeader {
+    background-color: orangered;
+}
+.testsTitle {
+    font-weight: bold;
+    /* increase span width and fixed size 
+    https://stackoverflow.com/a/4057499
+    */
+    display: inline-block;
+    min-width: 400px;
+    padding-right: 200px;
+}
+.testsDate {
+    text-align: right;
+}
+.testsContent {
+    font-style: italic;
+    /* increase div height to fit content (image on the left is bigger than text quantity, or vice versa) => harmonize div size to be max of the 2 
+    https://stackoverflow.com/a/17807687
+    */
+    display: block;
+    overflow: auto;
+}
+/* 
+include an image in a bigger div
+https://stackoverflow.com/a/28657183
+*/
+.testsDivImage {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height:200px;
+    border: solid;
+    border-radius: 20%;
+    float: left;
+}
+.testsContent img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20%;
+}
+/* create stars with rating
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating
+*/
+.checked {
+    color: orange;
+}
+
 .portrait {
     max-width: min-content;
     margin: 20px;
