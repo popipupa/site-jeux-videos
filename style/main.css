@@ -35,3 +35,31 @@ body {
 .eventInfo{
     font-weight: bold;
 }
+.newsBlock {
+    border-radius: 10px solid;
+    border-color: black;
+    padding-bottom: 30px;
+}
+.newsHeader {
+    background-color: deepskyblue;
+}
+.newsTitle {
+    font-weight: bold;
+    /* increase span width and fixed size 
+    https://stackoverflow.com/a/4057499
+    */
+    display: inline-block;
+    min-width: 400px;
+}
+.newsDate {
+    text-align: right;
+    padding-left: 200px;
+}
+.newsContent {
+    font-style: italic;
+}
+.newsContent img {
+    float: left;
+    max-width: 200px;
+    padding-right: 10px;
+}
