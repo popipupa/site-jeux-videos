@@ -1,6 +1,65 @@
 body {
     font-family: 'Catamaran', sans-serif;
 }
+
+/*
+navbar basée sur https://github.com/yobilyo/CFA_Stage/blob/main/vue/style/navbar.css
+*/
+nav ul {
+    display : flex;
+    width : 950px;
+    margin : auto;
+    justify-content : space-around;
+    border-radius: 15px;
+    background-color : #F2F3F4;
+    padding : 15px;
+    align-items: center;
+    color: black;
+}
+.logoAccueil {
+    width: 50px;
+    height: 50px;
+}
+nav li {
+    /* créer une liste sans puce
+    https://fr.w3docs.com/snippets/css/comment-supprimer-remplacer-ou-styler-les-puces-de-la-liste-avec-css.html
+    */
+    list-style-type: none;
+    color: inherit;
+}
+.afficherDropdown:hover .dropdown {
+    display: block;
+}
+.triangleDropdown {
+    font-size: 0.70em;
+}
+.baisser_le_dropdown:hover .dropdown {
+    display: block;
+}
+.dropdown {
+    display: none;
+    position:absolute;      /*pour ne pas faire bouger la navbar quand on deroule le dropdown*/
+	box-shadow:0px 0px 1px 0px ;
+    width: 175px;
+    padding: 5px;
+    background-color : #F8F9F9;
+}
+.lienNavbar {
+    text-decoration: none;
+    color: inherit; 
+}
+.lienNavbar:hover {
+    text-shadow: 0px 0px 1px;
+}
+.lienDropdown {
+    text-decoration: none;
+    margin: auto;
+    color: inherit;
+}
+.lienDropdown:hover {
+    text-shadow: 0px 0px 1px;
+}
+
 .imageHistoire {
     width: 400px;
 }

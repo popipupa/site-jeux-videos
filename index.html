@@ -13,36 +13,44 @@
 </head>
 <body>
     <header>
+        <!-- navbar reprise à partir de https://github.com/yobilyo/CFA_Stage/blob/main/vue/vue_navbar.php -->
         <nav>
-            <div>
-                <a href="index.html">Accueil</a>
-            </div>
-            <div>
-                Jeux
-                <a href="jeux/pc.html">PC</a>
-                <a href="jeux/ps4.html">PS4</a>
-                <a href="jeux/switch.html">Switch</a>
-            </div>
-            <div>
-                A propos               
-                <a href="a_propos/histoire.html">Histoire</a>
-                <a href="a_propos/equipe.html">L'équipe</a>
-                <a href="a_propos/awards.html">Prix et récompenses</a>
-            </div>
-            <div>
-                Store               
-                <a href="store/goodies.html">Goodies</a>
-            </div>
-            <div>
-                Community              
-                <a href="community/news.html">News</a>
-                <a href="community/events.html">Events</a>
-                <a href="community/tests.html">Tests</a>
-                <a href="community/avis.html">Avis</a>
-            </div>
-            <div>
-                <a href="contact.html">Contact</a>
-            </div>
+            <ul>
+                <li><a class="lienNavbar" href="./index.html"><img class="logoAccueil" src="./img/redfire-logo-630-630-1f525.jpg" /></a></li> | 
+                <li class="afficherDropdown">
+                    Jeux <span class=" triangleDropdown">▼</span>
+                    <span class="baisserLeDropdown">
+                        <ul class="dropdown">
+                            <li><a class="lienDropdown" href="./jeux/pc.html">PC</a></li>
+                            <li><a class="lienDropdown" href="./jeux/ps4.html">PlayStation 4</a></li>
+                            <li><a class="lienDropdown" href="./jeux/switch.html">Switch</a></li>
+                        </ul>
+                    </span>
+                </li> | 
+                <li class="afficherDropdown">
+                    A propos <span class=" triangleDropdown">▼</span>
+                    <span class="baisserLeDropdown">
+                        <ul class="dropdown">
+                            <li><a class="lienDropdown" href="./a_propos/histoire.html">Histoire</a></li>
+                            <li><a class="lienDropdown" href="./a_propos/equipe.html">L'équipe</a></li>
+                            <li><a class="lienDropdown" href="./a_propos/awards.html">Awards</a></li>
+                        </ul>
+                    </span>
+                </li> | 
+                <li><a class="lienNavbar" href="./store/goodies.html">Goodies</a></li> | 
+                <li class="afficherDropdown">
+                    Community <span class=" triangleDropdown">▼</span>
+                    <span class="baisserLeDropdown">
+                        <ul class="dropdown">
+                            <li><a class="lienDropdown" href="./community/news.html">News</a></li>
+                            <li><a class="lienDropdown" href="./community/events.html">Events</a></li>
+                            <li><a class="lienDropdown" href="./community/tests.html">Tests</a></li>
+                            <li><a class="lienDropdown" href="./community/avis.html">Avis</a></li>
+                        </ul>
+                    </span>
+                </li> | 
+                <li><a class="lienNavbar" href="./contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <h1>RedFire &#128293;</h1>
