@@ -127,6 +127,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating
     color: orange;
 }
 
+.portraitsEquipe{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
 .portrait {
     max-width: min-content;
     margin: 20px;
@@ -135,11 +141,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating
 }
 .portrait h3 {
     text-align: center;
-    border-top: solid 2px gray;
-    border-bottom: solid 2px gray;
+    border-top: solid 2px indianred;
+    border-bottom: solid 2px indianred;
+}
+.jobTitle {
+    color: gray;
 }
 .portrait img {
-    max-width: 250px;
+    width: 240px;
     display: block;
     margin-left: auto;
     margin-right: auto;
