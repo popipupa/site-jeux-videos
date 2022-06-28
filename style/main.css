@@ -196,3 +196,27 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_star_rating
     border-radius: 50%;
     z-index: 1;
 }
+
+.storeItem{
+    background-color: lightgray;
+    height: 250px;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+}
+.storeItem:hover{
+    background-color: tomato;
+    transition: 2s;    
+}
+.storeItem img{
+    max-height: 160px;
+    max-width: 150px;
+}
+.storeItem p{
+    margin: 0px;
+}
+.storeItem .prix{
+    color: black;
+}
