@@ -27,14 +27,8 @@ nav li {
     list-style-type: none;
     color: inherit;
 }
-.afficherDropdown:hover .dropdown {
-    display: block;
-}
 .triangleDropdown {
     font-size: 0.70em;
-}
-.baisser_le_dropdown:hover .dropdown {
-    display: block;
 }
 .dropdown {
     display: none;
@@ -43,6 +37,12 @@ nav li {
     width: 175px;
     padding: 5px;
     background-color : #F8F9F9;
+}
+.baisserLeDropdown:hover .dropdown {
+    display: block;
+}
+.afficherDropdown:hover .dropdown {
+    display: block;
 }
 .lienNavbar {
     text-decoration: none;
