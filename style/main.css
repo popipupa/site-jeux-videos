@@ -5,21 +5,144 @@ body {
 /*
 navbar basée sur https://github.com/yobilyo/CFA_Stage/blob/main/vue/style/navbar.css
 */
-nav ul {
-    display : flex;
-    width : 950px;
-    margin : auto;
-    justify-content : space-around;
-    border-radius: 15px;
-    background-color : #F2F3F4;
-    padding : 15px;
-    align-items: center;
-    color: black;
+/* create responsive */
+/* mobile view on chrome windows 10
+https://www.browserstack.com/guide/view-mobile-version-of-website-on-chrome
+ */
+
+@media screen and (max-width: 427px) {
+    /* very small devices (smaller than small smartphone) */
+    nav ul {
+        width: auto;
+        margin : auto;
+        justify-content : space-around;
+        align-items: center;
+        color: black; 
+    }
+    li {
+        writing-mode:vertical-rl;
+    }
+    .mainUl {
+        display : flex;
+        height: 37px;
+        border-radius: 50px;
+        padding : 15px;
+        background-color : #F2F3F4;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .logoAccueil {
+        width: 35px;
+        height: 35px;
+    }
+    .dropdown {
+        position: relative;
+        top: 90px;
+    }
 }
-.logoAccueil {
-    width: 50px;
-    height: 50px;
+
+@media screen and (min-width: 428px) and (max-width: 480px) {
+    /* smaller smartphones */
+    nav ul {
+        width: auto;
+        justify-content : space-around;
+        align-items: center;
+        color: black;   
+    }
+    .mainUl {
+        display : flex;
+        height: 37px;
+        border-radius: 50px;
+        padding : 15px;
+        background-color : #F2F3F4;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .logoAccueil {
+        width: 35px;
+        height: 35px;
+    }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* tablets and larger smartphones */
+    nav ul {
+        width: auto;
+        justify-content : space-around;
+        align-items: center;
+        color: black;   
+    }
+    .mainUl {
+        display : flex;
+        height: 47px;
+        border-radius: 50px;
+        padding : 15px;
+        background-color : #F2F3F4;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .logoAccueil {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    /* laptops, larger tablets in landscape, and small desktops */
+    nav ul {
+        width: auto;
+        justify-content : space-around;
+        align-items: center;
+        color: black;   
+    }
+    .mainUl {
+        display : flex;
+        height: 47px;
+        border-radius: 50px;
+        padding : 15px;
+        background-color : #F2F3F4;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .logoAccueil {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* larger desktops and monitors */
+    nav ul {
+        width: auto;
+        justify-content : space-around;
+        align-items: center;
+        color: black;   
+    }
+    .mainUl {
+        display : flex;
+        height: 47px;
+        border-radius: 50px;
+        padding : 15px;
+        background-color : #F2F3F4;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .logoAccueil {
+        width: 40px;
+        height: 40px;
+    }
+}
+
 nav li {
     /* créer une liste sans puce
     https://fr.w3docs.com/snippets/css/comment-supprimer-remplacer-ou-styler-les-puces-de-la-liste-avec-css.html
@@ -34,9 +157,10 @@ nav li {
     display: none;
     position:absolute;      /*pour ne pas faire bouger la navbar quand on deroule le dropdown*/
 	box-shadow:0px 0px 1px 0px ;
-    width: 175px;
-    padding: 5px;
+    padding: 7px;
+    border-radius: 20px;
     background-color : #F8F9F9;
+    margin : auto;
 }
 .baisserLeDropdown:hover .dropdown {
     display: block;
