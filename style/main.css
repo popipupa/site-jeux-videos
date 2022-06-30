@@ -153,6 +153,10 @@ nav li {
     list-style-type: none;
     color: inherit;
 }
+.separateur::after {
+    content :"|";
+    color: black;
+}
 .triangleDropdown {
     font-size: 0.70em;
 }
