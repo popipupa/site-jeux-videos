@@ -22,6 +22,9 @@ https://www.browserstack.com/guide/view-mobile-version-of-website-on-chrome
     li {
         writing-mode:vertical-rl;
     }
+    /*.dropdown > li {
+        writing-mode:horizontal-tb
+    }*/
     .mainUl {
         display : flex;
         height: 37px;
@@ -185,9 +188,11 @@ nav li {
 }
 
 .imageHistoire {
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
 }
 .imagePc {
+    width: 80%;
     width: 500px;
     /* center l'image */
     display: block;
@@ -195,7 +200,8 @@ nav li {
     margin-right: auto;
 }
 .imagePs4 {
-    width: 500px;
+    width: 80%;
+    max-width: 500px;
     /* center l'image */
     display: block;
     margin-left: auto;
