@@ -230,9 +230,15 @@ nav li {
     border-bottom: solid 2px indianred;
 }
 .event img {
-    float: left;
-    max-width: 200px;
+        max-width: 200px;
     margin: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .event img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .newsBlock {
