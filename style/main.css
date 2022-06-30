@@ -208,6 +208,10 @@ nav li {
     margin-left: auto;
     margin-right: auto;
 }
+.tableJeux {
+    margin-top: 6px;
+    margin-bottom: 20px;
+}
 
 .avis{
     background-color: lightgray;
