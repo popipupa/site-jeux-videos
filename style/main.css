@@ -189,11 +189,9 @@ nav li {
 
 .imageHistoire {
     width: 80%;
-    max-width: 400px;
 }
 .imagePc {
     width: 80%;
-    width: 500px;
     /* center l'image */
     display: block;
     margin-left: auto;
@@ -201,7 +199,6 @@ nav li {
 }
 .imagePs4 {
     width: 80%;
-    max-width: 500px;
     /* center l'image */
     display: block;
     margin-left: auto;
